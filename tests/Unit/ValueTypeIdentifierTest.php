@@ -22,11 +22,14 @@ class ValueTypeIdentifierTest extends TestCase
      * @dataProvider isNotBrowserPropertyDataProvider
      * @dataProvider isBrowserPropertyDataProvider
      */
-    public function testIsBrowserPropertyFoo(string $value, bool $expectedIs)
+    public function testIsBrowserPropertyFoo(string $value, bool $expectedIs): void
     {
         self::assertSame($expectedIs, $this->identifier->isBrowserProperty($value));
     }
 
+    /**
+     * @return array[]
+     */
     public function isNotBrowserPropertyDataProvider(): array
     {
         return [
@@ -41,6 +44,9 @@ class ValueTypeIdentifierTest extends TestCase
         ];
     }
 
+    /**
+     * @return array[]
+     */
     public function isBrowserPropertyDataProvider(): array
     {
         return [
@@ -55,11 +61,14 @@ class ValueTypeIdentifierTest extends TestCase
      * @dataProvider isNotDataParameterDataProvider
      * @dataProvider isDataParameterDataProvider
      */
-    public function testIsDataParameter(string $value, bool $expectedIs)
+    public function testIsDataParameter(string $value, bool $expectedIs): void
     {
         self::assertSame($expectedIs, $this->identifier->isDataParameter($value));
     }
 
+    /**
+     * @return array[]
+     */
     public function isNotDataParameterDataProvider(): array
     {
         return [
@@ -74,6 +83,9 @@ class ValueTypeIdentifierTest extends TestCase
         ];
     }
 
+    /**
+     * @return array[]
+     */
     public function isDataParameterDataProvider(): array
     {
         return [
@@ -92,11 +104,14 @@ class ValueTypeIdentifierTest extends TestCase
      * @dataProvider isNotEnvironmentValueDataProvider
      * @dataProvider isEnvironmentValueDataProvider
      */
-    public function testIsEnvironmentValue(string $value, bool $expectedIs)
+    public function testIsEnvironmentValue(string $value, bool $expectedIs): void
     {
         self::assertSame($expectedIs, $this->identifier->isEnvironmentValue($value));
     }
 
+    /**
+     * @return array[]
+     */
     public function isNotEnvironmentValueDataProvider(): array
     {
         return [
@@ -111,6 +126,9 @@ class ValueTypeIdentifierTest extends TestCase
         ];
     }
 
+    /**
+     * @return array[]
+     */
     public function isEnvironmentValueDataProvider(): array
     {
         return [
@@ -129,11 +147,14 @@ class ValueTypeIdentifierTest extends TestCase
      * @dataProvider isNotLiteralValueDataProvider
      * @dataProvider isLiteralValueDataProvider
      */
-    public function testIsLiteralValue(string $value, bool $expectedIs)
+    public function testIsLiteralValue(string $value, bool $expectedIs): void
     {
         self::assertSame($expectedIs, $this->identifier->isLiteralValue($value));
     }
 
+    /**
+     * @return array[]
+     */
     public function isNotLiteralValueDataProvider(): array
     {
         return [
@@ -156,6 +177,9 @@ class ValueTypeIdentifierTest extends TestCase
         ];
     }
 
+    /**
+     * @return array[]
+     */
     public function isLiteralValueDataProvider(): array
     {
         return [
@@ -170,11 +194,14 @@ class ValueTypeIdentifierTest extends TestCase
      * @dataProvider isNotPagePropertyDataProvider
      * @dataProvider isPagePropertyDataProvider
      */
-    public function testIsPageProperty(string $value, bool $expectedIs)
+    public function testIsPageProperty(string $value, bool $expectedIs): void
     {
         self::assertSame($expectedIs, $this->identifier->isPageProperty($value));
     }
 
+    /**
+     * @return array[]
+     */
     public function isNotPagePropertyDataProvider(): array
     {
         return [
@@ -185,6 +212,9 @@ class ValueTypeIdentifierTest extends TestCase
         ];
     }
 
+    /**
+     * @return array[]
+     */
     public function isPagePropertyDataProvider(): array
     {
         return [
@@ -211,7 +241,7 @@ class ValueTypeIdentifierTest extends TestCase
      * @dataProvider isLiteralValueDataProvider
      * @dataProvider isLiteralValueDataProvider
      */
-    public function testIsScalarValue(string $value, bool $expectedIs)
+    public function testIsScalarValue(string $value, bool $expectedIs): void
     {
         self::assertSame($expectedIs, $this->identifier->isScalarValue($value));
     }
