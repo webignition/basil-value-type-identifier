@@ -33,10 +33,10 @@ class ValueTypeIdentifier
 
     public function isScalarValue(string $value): bool
     {
-        return $this->isBrowserProperty($value) ||
-            $this->isDataParameter($value) ||
-            $this->isEnvironmentValue($value) ||
-            $this->isLiteralValue($value) ||
-            $this->isPageProperty($value);
+        return $this->isBrowserProperty($value)
+            || $this->isDataParameter($value)
+            || $this->isEnvironmentValue($value)
+            || $this->isLiteralValue($value)
+            || $this->isPageProperty($value);
     }
 }
