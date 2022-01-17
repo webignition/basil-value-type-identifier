@@ -28,7 +28,7 @@ class ValueTypeIdentifierTest extends TestCase
     }
 
     /**
-     * @return array[]
+     * @return array<mixed>
      */
     public function isNotBrowserPropertyDataProvider(): array
     {
@@ -45,7 +45,7 @@ class ValueTypeIdentifierTest extends TestCase
     }
 
     /**
-     * @return array[]
+     * @return array<mixed>
      */
     public function isBrowserPropertyDataProvider(): array
     {
@@ -67,7 +67,7 @@ class ValueTypeIdentifierTest extends TestCase
     }
 
     /**
-     * @return array[]
+     * @return array<mixed>
      */
     public function isNotDataParameterDataProvider(): array
     {
@@ -84,7 +84,7 @@ class ValueTypeIdentifierTest extends TestCase
     }
 
     /**
-     * @return array[]
+     * @return array<mixed>
      */
     public function isDataParameterDataProvider(): array
     {
@@ -110,7 +110,7 @@ class ValueTypeIdentifierTest extends TestCase
     }
 
     /**
-     * @return array[]
+     * @return array<mixed>
      */
     public function isNotEnvironmentValueDataProvider(): array
     {
@@ -127,7 +127,7 @@ class ValueTypeIdentifierTest extends TestCase
     }
 
     /**
-     * @return array[]
+     * @return array<mixed>
      */
     public function isEnvironmentValueDataProvider(): array
     {
@@ -153,7 +153,7 @@ class ValueTypeIdentifierTest extends TestCase
     }
 
     /**
-     * @return array[]
+     * @return array<mixed>
      */
     public function isNotLiteralValueDataProvider(): array
     {
@@ -178,7 +178,7 @@ class ValueTypeIdentifierTest extends TestCase
     }
 
     /**
-     * @return array[]
+     * @return array<mixed>
      */
     public function isLiteralValueDataProvider(): array
     {
@@ -200,7 +200,7 @@ class ValueTypeIdentifierTest extends TestCase
     }
 
     /**
-     * @return array[]
+     * @return array<mixed>
      */
     public function isNotPagePropertyDataProvider(): array
     {
@@ -213,7 +213,7 @@ class ValueTypeIdentifierTest extends TestCase
     }
 
     /**
-     * @return array[]
+     * @return array<mixed>
      */
     public function isPagePropertyDataProvider(): array
     {
